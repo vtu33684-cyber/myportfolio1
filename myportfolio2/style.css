@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#334155);
+    color:#f8fafc;
+    line-height:1.7;
+}
+
+/* Header */
+
+header{
+    background:linear-gradient(135deg,#2563eb,#0ea5e9);
+    padding:45px 20px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,.35);
+}
+
+header h1{
+    font-size:42px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+/* Profile Image */
+
+img{
+    display:block;
+    width:220px;
+    height:220px;
+    margin:35px auto;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #38bdf8;
+    box-shadow:0 0 30px rgba(56,189,248,.4);
+    transition:.4s;
+}
+
+img:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 45px rgba(56,189,248,.7);
+}
+
+/* Sections */
+
+section{
+    width:90%;
+    max-width:1000px;
+    margin:35px auto;
+    padding:35px;
+    background:#1e293b;
+    border:1px solid #334155;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+    transition:.3s;
+}
+
+section:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 35px rgba(37,99,235,.25);
+}
+
+/* Headings */
+
+h2{
+    color:#38bdf8;
+    text-align:center;
+    margin-bottom:25px;
+    font-size:30px;
+    position:relative;
+}
+
+h2::after{
+    content:"";
+    display:block;
+    width:70px;
+    height:4px;
+    margin:10px auto;
+    border-radius:20px;
+    background:#38bdf8;
+}
+
+h3{
+    color:#ffffff;
+    margin-top:20px;
+}
+
+/* Paragraph */
+
+p{
+    color:#cbd5e1;
+    font-size:16px;
+}
+
+/* Skills */
+
+ul{
+    list-style:none;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:18px;
+}
+
+li{
+    background:#334155;
+    color:#ffffff;
+    padding:15px;
+    text-align:center;
+    border-radius:10px;
+    transition:.3s;
+    font-weight:500;
+}
+
+li:hover{
+    background:#2563eb;
+    transform:translateY(-5px);
+}
+
+/* Tables */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    overflow:hidden;
+    border-radius:10px;
+}
+
+table th{
+    background:#2563eb;
+    color:#fff;
+    padding:15px;
+    text-align:left;
+}
+
+table td{
+    background:#293548;
+    color:#f8fafc;
+    padding:15px;
+}
+
+table,
+th,
+td{
+    border:1px solid #475569;
+}
+
+table tr:nth-child(even) td{
+    background:#243244;
+}
+
+table tr:hover td{
+    background:#0ea5e9;
+    color:#ffffff;
+}
+
+/* Links */
+
+a{
+    color:#38bdf8;
+    text-decoration:none;
+    transition:.3s;
+}
+
+a:hover{
+    color:#7dd3fc;
+}
+
+/* Form */
+
+form{
+    margin-top:20px;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:15px;
+    margin:12px 0;
+    border:1px solid #475569;
+    border-radius:10px;
+    background:#293548;
+    color:#ffffff;
+    font-size:15px;
+    outline:none;
+}
+
+input::placeholder,
+textarea::placeholder{
+    color:#94a3b8;
+}
+
+input:focus,
+textarea:focus{
+    border:2px solid #38bdf8;
+    box-shadow:0 0 10px rgba(56,189,248,.3);
+}
+
+textarea{
+    resize:none;
+}
+
+/* Button */
+
+button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:linear-gradient(135deg,#2563eb,#0ea5e9);
+    color:#ffffff;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 25px rgba(37,99,235,.35);
+}
+
+/* Result */
+
+#result{
+    color:#22c55e;
+    font-weight:600;
+    margin-top:15px;
+}
+
+/* Footer */
+
+footer{
+    margin-top:40px;
+    background:#020617;
+    color:#94a3b8;
+    text-align:center;
+    padding:25px;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0f172a;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#2563eb;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#38bdf8;
+}
+
+/* Responsive */
+
+@media (max-width:768px){
+
+header h1{
+    font-size:30px;
+}
+
+img{
+    width:170px;
+    height:170px;
+}
+
+section{
+    width:95%;
+    padding:20px;
+}
+
+ul{
+    grid-template-columns:1fr;
+}
+
+table{
+    font-size:14px;
+}
+
+button{
+    font-size:16px;
+}
+}
